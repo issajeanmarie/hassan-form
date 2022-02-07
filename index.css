@@ -66,3 +66,38 @@ li {
 .drop:hover .d-content {
 	display: flex;
 }
+
+.inputContainer {
+	width: fit-content;
+	position: relative;
+	padding: 0.7em 0;
+}
+
+input {
+	width: 15em;
+	height: 38px;
+	padding: 0 12px;
+	outline: none;
+	border: 1px solid rgb(189, 189, 189);
+	border-radius: 3px;
+}
+
+label {
+	position: absolute;
+	left: 12px;
+	bottom: 35%;
+	transition: 0.1s ease-in;
+	color: rgb(189, 189, 189);
+}
+
+input:focus ~ label {
+	bottom: 68%;
+	background-color: #fff;
+	color: rgb(109, 109, 109);
+	padding: 0 12px;
+	font-size: 0.8em;
+}
+
+button {
+	padding: 12px 32px;
+}
